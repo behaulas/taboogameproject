@@ -1,0 +1,181 @@
+
+
+.playerFFA {
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  background-color: #251a41;
+  height: 55px;
+  padding: 0px !important;
+  border-radius: 20px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  
+  box-shadow:  2px 2px 20px #00000018,
+             -2px -2px 20px #00000018;
+}
+
+.playerFFA.leftStack {
+  flex-direction: row-reverse;
+}
+
+.playerFFA.leftStack .ffaScore {
+  background-color: #F7665E;
+  height: 100% !important;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-left: 0px !important;
+  padding-right: 5px !important;
+  
+  
+}
+
+.ffaScore {
+  background-color: #F7665E;
+  height: 100% !important;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-left: 5px;
+  
+  
+}
+.ffaScore p {
+  margin: 0px;
+  color: white;
+  font-size: 30px;
+  
+}
+
+.playerStack {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+
+.turnStartingEmoji {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+
+  margin-top: 50px;
+}
+
+.turnStartingEmoji p {
+  color: white;
+  opacity: .8;
+  font-weight: 500;
+  margin: 5px;
+  text-align: center;
+}
+
+.turnStartingEmoji p:nth-child(1) {
+  color: #73D673;
+  font-weight: 800;
+  font-size: 25px;
+  opacity: 1;
+}
+
+
+.emojiDivParent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.emojiExplain {
+  font-size: 50px;
+}
+
+.emojiInputTop {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+@keyframes wrong {
+  0% { opacity: 1;transform: translateX(-5px) }
+  50% { opacity: 1;transform: translateX(5px) }
+  100% { opacity: 1;transform: translateX(-5px) }
+}
+
+.emojiOneWord {
+display: flex;
+gap: 0px;
+}
+
+.emojiInput {
+  width: 40px;
+  height: 40px;
+  margin: 0px;
+  color: white;
+  font-size: 25px;
+  background-color: #281d46;
+  font-family: PT Sans;
+  font-weight: 900;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  outline: none;
+  border: 2px solid #151027;
+  border-radius: 5px;
+  transition: all .2s;
+}
+
+.emojiInput.alreadyGiven {
+  background-color: transparent;
+  border: none;
+  color: white;
+  width: fit-content;
+  vertical-align: middle;
+  line-height: 45px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.emojiWinner {
+  position: absolute;
+  width: 200px;
+  box-shadow:  2px 2px 20px #00000031,
+             -2px -2px 20px #00000031;
+             border-radius: 150px;
+             height: fit-content;
+             display: flex;
+
+  opacity: 0;
+  scale: 0;
+
+  animation: emojiWinnder .2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes emojiWinnder {
+  0% {opacity: 0; scale: 0;}
+  90% {opacity: 1; scale: 1.1; transform: translateY(-45px);}
+  100% {opacity: 1; scale: 1;  transform: translateY(-45px);}
+}
+
+.emojiWinner > div {
+  background-color: #73D673 !important; 
+
+  
+}
+
+
+
+

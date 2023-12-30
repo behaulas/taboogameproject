@@ -1,0 +1,191 @@
+.whoAmIRoot {
+
+    
+    display: flex;
+    flex:1;
+
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.whoAmICenter {
+    
+    
+    
+    position: absolute;
+    
+}
+
+.whoAmIActions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.whoAmILobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+}
+
+.whoAmIPlayer {
+    transform: translateX(-50%);
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.startGame {
+    background-color: #73D673;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.startGame:hover {
+    background-color: #73D673 !important;
+}
+
+.whoAmIInput {
+    background-color: #251C42 !important;
+    color: white;
+    
+}
+
+.guessWord {
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    padding-left: 20px;
+     padding-right: 20px;
+     border-radius: 100px;
+     top: 0px;
+
+     transform: translateY(-110%);
+}
+
+.guessWord p {
+    color: black;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.yourTurnDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.yourTurnDiv p {
+    color: white;
+    opacity: .8;
+    font-weight: 500;
+    margin: 5px;
+    text-align: center;
+}
+
+.yourTurnDiv p:nth-child(1) {
+    color: #73D673;
+    font-weight: 800;
+    font-size: 25px;
+    opacity: 1;
+}
+
+.yourTurnDiv button:nth-child(3) {
+    background-color: #E8D28F;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+
+
+}
+
+.yourTurnDiv input {
+    margin-top: 30px;
+    background-color: #281d46 !important;
+
+  border-radius: 15px;
+  color: white;
+  border: none;
+  outline: none;
+  font-family: PT Sans;
+  font-weight: 700;
+  padding: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 20px;
+  transition: all .2s;
+}
+
+.yourTurnDiv button:nth-child(5) {
+    background-color: #F85E68;
+    margin-top: 10px;
+    width: 180px;
+    
+
+}
+
+.guessedAnim {
+    position: absolute;
+    top: 50px;
+    background-color: #DBDBDB; 
+    padding: 10px;
+    border-radius: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    animation: card-open 5s;
+    animation-fill-mode: forwards;
+
+    transition: all .2s;
+
+}
+@keyframes card-open {
+    0% { opacity: 0; scale: .8;transform: translateY(-20px) }
+    40% { opacity: 1; scale: 1; transform: translateY(0px) }
+    60% { opacity: 1; scale: 1; transform: translateY(0px) }
+    100% { opacity: 0;scale: .8; transform: translateY(-20px) }
+}
+
+.guessedAnim p {
+    margin: 0px;
+}
+
+.guessedAnim:after {
+    
+    content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 13px solid transparent;
+	border-bottom-color: #DBDBDB;
+	border-top: 0;
+	margin-left: -13px;
+	margin-top: -13px;
+}
+
+
+.otherTurn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.otherTurn p {
+    color: white;
+    opacity: .8;
+    font-weight: 500;
+    margin: 5px;
+    text-align: center;
+}
